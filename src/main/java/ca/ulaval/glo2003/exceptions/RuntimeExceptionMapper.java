@@ -1,6 +1,6 @@
 package ca.ulaval.glo2003.exceptions;
 
-import ca.ulaval.glo2003.api.responses.ErrorResponse;
+import ca.ulaval.glo2003.ErrorResponse;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
 
