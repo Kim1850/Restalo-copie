@@ -24,3 +24,5 @@ jobs:
         uses: JetBrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+          QODANA_REPORT_COVERAGE: true
+          QODANA_REPORT_SECURITY: true
