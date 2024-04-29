@@ -22,7 +22,13 @@ jobs:
           fetch-depth: 0  # a full history is required for pull request analysis
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.1
+      - name: Upload JaCoCo coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: src/main/java/ca/ulaval/glo2003
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
           QODANA_REPORT_COVERAGE: true
           QODANA_REPORT_SECURITY: true
+
