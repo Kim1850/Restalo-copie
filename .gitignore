@@ -1,0 +1,22 @@
+# References:
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+# https://www.toptal.com/developers/gitignore/
+
+
+### IntelliJ Idea ###
+# For now, we delete the .idea file. If we add team configurations
+# to it, we will enable those configurations to be added to the repo.
+.idea/
+out/
+
+
+### Maven ###
+target/
+
+
+### Package Files ###
+# In case we produce an executable of some sort
+*.jar
+*.zip
+*.tar.gz
+*.rar
